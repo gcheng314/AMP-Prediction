@@ -1,11 +1,16 @@
 # AMP-Prediction
 
-This project will aid in predicting novel antimicrobial peptide (AMP) families using command line blastp and hmmsearch
+This project will aid in predicting novel antimicrobial peptide (AMP) families using command line Diamond blast and hmmsearch
 
 Requires:
-Python 2.7 + 
+Python 2.7.1 or higher 
 Linux command line
-amp_pred.py in Linux computer
+All .hmm files downloaded from http://www.camp.bicnirrh.res.in/pattern_hmm.php?q=HMM_fam and merged 
+amp_pred.py in Linux 
+
+BEFRORE RUNNING amp.py:
+
+change indicated directories to your cown preferred directories
 
 Instructions
 [On preferred O.S.]
@@ -30,4 +35,3 @@ Run rank_by_prob.py with {d_rerio_dl_prediction.txt}, name of output file {d_rer
 Run amp_pred.py with {d_rerio_dl_ranked.txt} as the parameter
 
 7.
-
