@@ -30,6 +30,4 @@ Run rank_by_prob.py with {d_rerio_dl_prediction.txt}, name of output file {d_rer
 Run amp_pred.py with {d_rerio_dl_ranked.txt} as the parameter
 
 7.
-################################  BLASTP DIRECTORIES
 
-U
