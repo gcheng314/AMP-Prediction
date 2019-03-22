@@ -3,10 +3,11 @@
 This project will aid in predicting novel antimicrobial peptide (AMP) families using command line Diamond blast and hmmsearch
 
 Requires:
-Python 2.7.1 or higher 
-Linux command line
-All .hmm files downloaded from http://www.camp.bicnirrh.res.in/pattern_hmm.php?q=HMM_fam and merged 
-amp_pred.py in Linux 
+- Python 2.7.1 or higher 
+- Notepad++ 
+- Linux command line
+- All .hmm files downloaded from http://www.camp.bicnirrh.res.in/pattern_hmm.php?q=HMM_fam and merged into amps.hmm 
+- amp_pred.py in Linux machine
 
 BEFRORE RUNNING amp.py:
 
@@ -18,20 +19,19 @@ Instructions
 Choose a proteome from Uniprot.org, for example {d_rerio_proteome.fasta}
 
 2.
-Run trim_fasta.py with {d_rerio_proteome.fasta} and the name of your desired output file, {d_rerio_prot_trim.fasta} as parameters
+Run trim_fasta.py with {d_rerio_proteome.fasta} and the name of your desired output file, {d_rerio_prot_trim.fasta} as parameters 
+
+                  *** If on Windows or MacOSX, open {d_rerio_proteome.fasta} with Notepad++, click on Edit => EOL Conversion => Unix ***
 
 3. 
 Input the trimmed .fasta file {d_rerio_prot_trim.fasta} to https://www.dveltri.com/ascan/v2/index.html, a prediction tool using deep learning
 
 4.
-From extracting the resulting .zip file downloaded from https://www.dveltri.com/ascan/v2/index.html, convert the MS Excel file to a tab-delimited .txt file {d_rerio_dl_prediction.txt}
+From extracting the resulting .zip file downloaded from https://www.dveltri.com/ascan/v2/index.html, convert the MS Excel file to a tab-delimited .txt file {d_rerio_pred.txt}
 
 5.
-Run rank_by_prob.py with {d_rerio_dl_prediction.txt}, name of output file {d_rerio_dl_ranked.txt}, and probability threshold {0.95} as parameters
-
+Run rank.py with {d_rerio_pred.txt} and probility threshold {0.95} as parameters and upload the output {d_rerio_pred_ranked.txt} to Linux 
 
 [On Linux command line]
 6.  
-Run amp_pred.py with {d_rerio_dl_ranked.txt} as the parameter
-
-7.
+Run amp_pred.py with {d_rerio_pred_ranked.txt} as the parameter. If necessary, change the source code so that the directories/file locations used in the subprocess.Popen commands are appropriate to the user
