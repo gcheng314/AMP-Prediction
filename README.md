@@ -2,6 +2,12 @@
 
 This project will aid in predicting novel antimicrobial peptide (AMP) families using command line Diamond blast and hmmsearch
 
+Includes:
+amp.py
+rank.py
+trim_fasta.py
+
+
 Requires:
 - Python 2.7.1 or higher 
 - Notepad++ 
@@ -34,4 +40,7 @@ Run rank.py with {d_rerio_pred.txt} and probility threshold {0.95} as parameters
 
 [On Linux command line]
 6.  
-Run amp_pred.py with {d_rerio_pred_ranked.txt} as the parameter. If necessary, change the source code so that the directories/file locations used in the subprocess.Popen commands are appropriate to the user
+Run amp_pred.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If necessary, change the source code so that the directories/file locations used in the subprocess commands are appropriate to the user
+
+[Additionally]
+check_knowns.py filters the true positive AMPs from a raw proteome downloaded from Uniprot via known families
