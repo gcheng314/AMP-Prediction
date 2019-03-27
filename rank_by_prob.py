@@ -7,10 +7,13 @@ def rank_results(infile, outfile, P):
     It then filters the contents by each protein's probability of being an AMP 
     greater than or equal to P and saves all the results in another file
     
-    requires:
-    infile is not empty
-    0.00 < P < =1.00
+    Requires:
     
+    0.00 <= P <= =1.00
+    
+    Example:
+    If the s. salar proteome is the input of dveltri's tool, and the Excel file is converted to a txt file,
+    all the results are ranked from highest probability to lowest with a sequence length cutoff of 50 amino acids. 
     '''
     
     class Protein:
