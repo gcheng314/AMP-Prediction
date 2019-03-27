@@ -1,7 +1,7 @@
 import subprocess
 import re
 
-#initializing 
+#initialize variables 
 raw_input = open('om_ranked.txt', 'r')
 entry = raw_input.readline()
 entry = raw_input.readline()
