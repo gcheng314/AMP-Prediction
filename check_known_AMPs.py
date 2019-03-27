@@ -1,7 +1,7 @@
 def knowns(infile):
     list_amps = ['Bacteriocin', 'Brevinin', 'Beta-defensin', 'Cathelicidin', 
                  'Defensin', 'Dermaseptin', 'Latarcin', 'Palustrin', 'Rugosin', 
-                 'Cecropin', 'LEAP2', 'Liver-expressed', 'Penaeidin', 
+                 'Cecropin', 'LEAP', 'LEAP2', 'Liver-expressed', 'Penaeidin', 
                  'Tachystatin', 'Esculentin', 'Maximin', 'Phylloseptin', 
                  'Temporin', 'Pleurocidin', 'Thaumatin', 'Formaecin', 
                  'Melittin', 'Ponericin', 'Thionin', 'Ascaphin', 'Caerin', 
