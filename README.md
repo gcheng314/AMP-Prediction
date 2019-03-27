@@ -44,3 +44,4 @@ Run amp_pred.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If nec
 
 [Additionally]
 check_knowns.py filters the true positive AMPs from a raw proteome downloaded from Uniprot via known families
+
