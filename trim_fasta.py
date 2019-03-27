@@ -12,7 +12,10 @@ def trim_fasta(infile):
     The file is in the same directory as this script
     
     Example:
-    
+    If this function is run with the d. rerio proteome,
+    each line that begins with '>' would be reduced to its accession number
+    and is written to a separate file. Any illegal characters would also be
+    removed. 
     '''
     original_fasta = open(infile, 'r') #initializing files for reading 
     modded_fasta = open(infile[:infile.index('.')] + 
