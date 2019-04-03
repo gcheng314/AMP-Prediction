@@ -25,7 +25,7 @@ Instructions
 Choose a proteome from Uniprot.org, for example {d_rerio_proteome.fasta}
 
 2.
-Run trim_fasta.py with {d_rerio_proteome.fasta} and the name of your desired output file, {d_rerio_prot_trim.fasta} as parameters 
+Run trim.py with {d_rerio_proteome.fasta} and the name of your desired output file, {d_rerio_prot_trim.fasta} as parameters 
 
                   *** If on Windows or MacOSX, open {d_rerio_proteome.fasta} with Notepad++, click on Edit => EOL Conversion => Unix ***
 
@@ -40,8 +40,9 @@ Run rank.py with {d_rerio_pred.txt} and probility threshold {0.95} as parameters
 
 [On Linux command line]
 6.  
-Run amp_pred.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If necessary, change the source code so that the directories/file locations used in the subprocess commands are appropriate to the user
+Run tabulate.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If necessary, change the source code so that the directories/file locations used in the subprocess commands are appropriate to the user
 
 [Additionally]
-check_knowns.py filters the true positive AMPs from a raw proteome downloaded from Uniprot via known families
+find_knowns.py filters the true positive AMPs from a raw proteome downloaded from Uniprot via known families
+find_unknowns.py filters the unknowns/uncharacterized proteins from a raw proteome downloaded from Uniprot
 
