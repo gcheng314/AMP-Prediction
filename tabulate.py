@@ -7,6 +7,10 @@ matches, and the e-value (via hmmsearch if found)
 Requires:
 file is not empty
 
+Examples:
+If the user uses the output file of rank.py for the d. rerio proteome, the script will write a file that has the above mentioned table.
+If Diamond BLAST does not find any matches for a protein, the mean lengths collumn will be n/a. If hmmsearch does not find matches, the 
+e-value collumn will be n/a
 '''
 
 import subprocess
