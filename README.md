@@ -9,8 +9,7 @@ trim_fasta.py
 
 
 Requires:
-- Python 2.7.1 or higher 
-- Notepad++ 
+- Python 2.7.1 or higher
 - Linux command line
 - All .hmm files downloaded from http://www.camp.bicnirrh.res.in/pattern_hmm.php?q=HMM_fam and merged into amps.hmm 
 - amp_pred.py in Linux machine
