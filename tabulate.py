@@ -112,7 +112,7 @@ while line != '':
 
     line = table.readline()
 
-f_out = open(input_txt[:input_txt.index('.')] + '_table.txt', 'w')
+f_out = open('output_table.txt', 'w')
 
 f_out.write('Accession No.\tAMP Probability\tQuery Length\tNumber of Matches\tMean Length of Matches\tE-value\n')
 
