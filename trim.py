@@ -15,7 +15,6 @@ def trim(infile):
     Examples:
     If the user uses the zebrafish proteome downloaded from Uniprot as the 
     input, the script writes the same file with the changes to a new file
-    
     '''
     original_fasta = open(infile, 'r') #initializing files for reading 
     modded_fasta = open(infile[:infile.index('.')] + 
