@@ -58,7 +58,7 @@ def rank(infile):
     
         accession = entry[:first_split+1].split('|')[1]
 
-        #debugging 
+        #debugging, uncomment if formatting error occurs and manually fix
         #if not(entry[second_split+1:third_split+1].startswith('0') or
                #entry[second_split+1:third_split+1].startswith('1')):
             #print(accession)
@@ -92,5 +92,4 @@ def rank(infile):
         output.write(str(each) + '\n')
     
     output.close()
-    
     print('Done')
