@@ -15,8 +15,6 @@ Requires:
 - All .hmm files downloaded from http://www.camp.bicnirrh.res.in/pattern_hmm.php?q=HMM_fam and merged into amps.hmm 
 - amp_pred.py in Linux machine
 
-BEFRORE RUNNING amp.py:
-
 change indicated directories to your cown preferred directories
 
 Instructions
@@ -25,7 +23,7 @@ Instructions
 Choose a proteome from Uniprot.org, for example {d_rerio_proteome.fasta}
 
 2.
-Run trim.py with {d_rerio_proteome.fasta} and the name of your desired output file, {d_rerio_prot_trim.fasta} as parameters 
+Run trim.py with {d_rerio_proteome.fasta}  
 
         If on Windows or MacOSX, convert the end-of-line characters in the file to Unix format using dox2unix Linux command or
         via software such as Notepad++
