@@ -1,3 +1,14 @@
+'''
+This script will produce a table of novel AMP candidates from the output file of
+rank.py with the following categories: AMP probabily, Protein Length, 
+Number of Matches (via Diamond BLAST up to 25 matches), mean length of the 
+matches, and the e-value (via hmmsearch if found) 
+
+Requires:
+file is not empty
+
+'''
+
 import subprocess
 import re
 
@@ -33,9 +44,9 @@ class Properties:
             self.match_lst == other.match_lst and \
             self.e_val == other.e_val
 
-input_txt = input('Please type file name: ')
-predicted = open(input_txt, 'w')
-raw_input = open('ss_ranked.txt', 'r')
+predicted = open('predicted.txt', 'w')
+raw_input = open('example.txt', 'r') # <====== replace example.txt with name of
+                                     # output file from rank.py
 
 entry = raw_input.readline() #ignores first line
 entry = raw_input.readline()
@@ -97,7 +108,7 @@ while line != '':
 
     line = table.readline()
 
-f_out = open(input_txt[:input_txt.index('.')] + '_trim.txt', 'w')
+f_out = open(input_txt[:input_txt.index('.')] + '_table.txt', 'w')
 
 f_out.write('Accession No.\tAMP Probability\tQuery Length\tNumber of Matches\tMean Length of Matches\tE-value\n')
 

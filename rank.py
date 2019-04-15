@@ -1,4 +1,4 @@
-def rank(infile, P):
+def rank(infile):
     '''
     rank_results reads in a txt file, infile, that is converted from an Excel
     spreadsheet downloaded from https://www.dveltri.com/ascan/v2/index.html and
@@ -67,7 +67,7 @@ def rank(infile, P):
         sequence = entry[third_split+1:-1]
         length = len(sequence)
         
-        if probability >= P and length < 100:
+        if probability >= 0.5 and length <= 70:
             prot = Protein(accession, probability, length, sequence)
             prot_list.append(prot)
             

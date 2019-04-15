@@ -1,4 +1,7 @@
 def unknowns(infile):
+    '''
+    unknowns will take a fasta file downloaded from Uniprot and will output a 
+    file that contains all uncharacterized proteins '''
     
     f = open(infile, 'r')
     o = open(infile[:infile.index('.')]+'_unknowns.txt', 'w')
