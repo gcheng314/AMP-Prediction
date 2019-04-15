@@ -44,3 +44,12 @@ Run tabulate.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If nec
 find_knowns.py filters the true positive AMPs from a raw proteome downloaded from Uniprot via known families
 find_unknowns.py filters the unknowns/uncharacterized proteins from a raw proteome downloaded from Uniprot
 Both these scripts will output a text file in fasta format
+
+[Citations]
+Daniel Veltri, Uday Kamath, and Amarda Shehu (2018) Deep Learning Improves Antimicrobial Peptide Recognition. Bioinformatics, 34(16):2740-2747. (DOI: 10.1093/bioinformatics/bty179)
+
+The UniProt Consortium 
+UniProt: a worldwide hub of protein knowledge 
+
+Waghu, F. H., Gopi, L., Barai, R. S., Ramteke, P., Nizami, B., & Idicula-Thomas, S. (2013). CAMP: Collection of sequences and structures of antimicrobial peptides. Nucleic acids research, 42(Database issue), D1154–D1158. doi:10.1093/nar/gkt1157
+Nucleic Acids Res. 47: D506-515 (2019)
