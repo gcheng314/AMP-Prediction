@@ -27,7 +27,8 @@ Choose a proteome from Uniprot.org, for example {d_rerio_proteome.fasta}
 2.
 Run trim.py with {d_rerio_proteome.fasta} and the name of your desired output file, {d_rerio_prot_trim.fasta} as parameters 
 
-                  *** If on Windows or MacOSX, open {d_rerio_proteome.fasta} with Notepad++, click on Edit => EOL Conversion => Unix ***
+        If on Windows or MacOSX, convert the end-of-line characters in the file to Unix format using dox2unix Linux command or
+        via software such as Notepad++
 
 3. 
 Input the trimmed .fasta file {d_rerio_prot_trim.fasta} to https://www.dveltri.com/ascan/v2/index.html, a prediction tool using deep learning
@@ -45,4 +46,4 @@ Run tabulate.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If nec
 [Additionally]
 find_knowns.py filters the true positive AMPs from a raw proteome downloaded from Uniprot via known families
 find_unknowns.py filters the unknowns/uncharacterized proteins from a raw proteome downloaded from Uniprot
-
+Both these scripts will output a text file in fasta format
