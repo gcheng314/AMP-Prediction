@@ -17,6 +17,7 @@ import subprocess
 import re
 
 def mean(L):
+    
     if L == []:
         return 'n/a'
 
