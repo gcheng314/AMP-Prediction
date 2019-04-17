@@ -70,7 +70,7 @@ while entry != '':
 raw_input.close()
 predicted.close()
 
-diamond = 'diamond blastp -d uniref90.dmnd -q predicted.fasta -o matches.txt --max-target-seqs 500'
+diamond = 'diamond blastp -d uniref90.dmnd -q predicted.fasta -o matches.txt --max-target-seqs 900'
 diamond_cmd = subprocess.Popen(diamond.split(' '), stdout = subprocess.PIPE)
 diamond_cmd_out = diamond_cmd.communicate()
 
