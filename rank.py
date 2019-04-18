@@ -5,11 +5,17 @@ def rank(infile):
     saved as a tab-delimited .txt file.
     
     It then filters the contents by each protein's probability of being an AMP 
-    greater than or equal to P and saves all the results in another file
+    greater than or equal to 50%, ranks the resulting list of proteins from
+    greatest to smallest probability, and saves all the results in another file
     
-    requires:
+    Requires:
     infile is not empty
-    0.00 < P < =1.00
+    infile is an Excel file converted a tab-delimited txt file 
+    
+    Example:
+    If the user sets 'd_rerio_predictions.txt' as the input file, the funtion will 
+    take each protein, decide if its probability is high enough, ranks the 
+    remaining proteins, and write the new list to a txt file. 
     
     '''
     
