@@ -71,7 +71,7 @@ while entry != '':
 raw_input.close()
 predicted.close()
 
-diamond = 'diamond blastp -d uniref90.dmnd -q predicted.fasta -o matches.txt --max-target-seqs 900'
+diamond = 'diamond blastp -d uniref90.dmnd -q predicted.fasta -o matches.txt -f 6 qseqid sseqid slen --max-target-seqs 900'
 diamond_cmd = subprocess.Popen(diamond.split(' '), stdout = subprocess.PIPE)
 diamond_cmd_out = diamond_cmd.communicate()
 
@@ -83,7 +83,7 @@ while match_query != '':
     lst_match = match_query.split('\t')
 
     if lst_match[0] not in lst_match[1]:
-        dict_table[lst_match[0]].match_lst.append(int(lst_match[9]))
+        dict_table[lst_match[0]].match_lst.append(int(lst_match[2]))
 
     match_query = match_file.readline()
 
