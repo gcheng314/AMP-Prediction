@@ -1,7 +1,16 @@
 def knowns(infile):
     '''
     knowns will take a fasta file downloaded from Uniprot and will output a file
-    that contains all known AMPs '''
+    that contains all known AMPs 
+    
+    Requires:
+    file is not empty
+    file is in FASTA format
+    
+    Example:
+    If the user sets 'd_rerio_proteome.fasta' as the input file, the function will 
+    write all proteins that are known AMPs to a new file
+    '''
     
     list_amps = ['Nigrocin', 'Bacteriocin', 'Brevinin', 'Beta-defensin', 
                  'Cathelicidin', 'Defensin', 'Dermaseptin', 'Latarcin', 
