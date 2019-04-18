@@ -2,14 +2,19 @@
 
 This project will aid in predicting novel antimicrobial peptide (AMP) families using command line Diamond blast and hmmsearch
 
-Includes:
+# Includes:
 tabulate.py
+
 rank.py
+
 trim.py
+
 find_unknowns.py
+
 find_knowns.py
 
-Requires:
+
+# Requires:
 - Python 2.7.1 or higher
 - Linux command line
 - All .hmm files downloaded from http://www.camp.bicnirrh.res.in/pattern_hmm.php?q=HMM_fam and merged into amps.hmm 
@@ -17,7 +22,8 @@ Requires:
 
 change indicated directories to your cown preferred directories
 
-Instructions
+# Instructions
+
 [On preferred O.S.]
 
 1.
@@ -38,20 +44,23 @@ From extracting the resulting .zip file downloaded from https://www.dveltri.com/
 delimited .txt file {d_rerio_pred.txt}
 
 5.
-Run rank.py with {d_rerio_pred.txt} and probility threshold {0.95} as parameters and upload the output {d_rerio_pred_ranked.txt} to 4
+Run rank.py with {d_rerio_pred.txt} and probility threshold {0.95} as parameters and upload the output {d_rerio_pred_ranked.txt} to
 Linux 
 
 [On Linux command line]
+
 6.  
 Run tabulate.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If necessary, change the source code so that the
 directories/file locations used in the subprocess commands are appropriate to the user
 
 [Additionally]
+
 find_knowns.py filters the true positive AMPs from a raw proteome downloaded from Uniprot via known families
 find_unknowns.py filters the unknowns/uncharacterized proteins from a raw proteome downloaded from Uniprot
 Both these scripts will output a text file in fasta format
 
-[Citations]
+# Citations
+
 Buchfink B, Xie C, Huson DH, "Fast and sensitive protein alignment using DIAMOND", Nature Methods 12, 59-60 (2015).
 doi:10.1038/nmeth.3176
 
