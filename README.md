@@ -19,6 +19,7 @@ change indicated directories to your cown preferred directories
 
 Instructions
 [On preferred O.S.]
+
 1.
 Choose a proteome from Uniprot.org, for example {d_rerio_proteome.fasta}
 
@@ -29,17 +30,21 @@ Run trim.py with {d_rerio_proteome.fasta}
         via software such as Notepad++
 
 3. 
-Input the trimmed .fasta file {d_rerio_prot_trim.fasta} to https://www.dveltri.com/ascan/v2/index.html, a prediction tool using deep learning
+Input the trimmed .fasta file {d_rerio_prot_trim.fasta} to https://www.dveltri.com/ascan/v2/index.html, a prediction tool using deep
+learning
 
 4.
-From extracting the resulting .zip file downloaded from https://www.dveltri.com/ascan/v2/index.html, convert the MS Excel file to a tab-delimited .txt file {d_rerio_pred.txt}
+From extracting the resulting .zip file downloaded from https://www.dveltri.com/ascan/v2/index.html, convert the MS Excel file to a tab
+delimited .txt file {d_rerio_pred.txt}
 
 5.
-Run rank.py with {d_rerio_pred.txt} and probility threshold {0.95} as parameters and upload the output {d_rerio_pred_ranked.txt} to Linux 
+Run rank.py with {d_rerio_pred.txt} and probility threshold {0.95} as parameters and upload the output {d_rerio_pred_ranked.txt} to 4
+Linux 
 
 [On Linux command line]
 6.  
-Run tabulate.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If necessary, change the source code so that the directories/file locations used in the subprocess commands are appropriate to the user
+Run tabulate.py with {d_rerio_pred_ranked.txt} as the raw_input variable. If necessary, change the source code so that the
+directories/file locations used in the subprocess commands are appropriate to the user
 
 [Additionally]
 find_knowns.py filters the true positive AMPs from a raw proteome downloaded from Uniprot via known families
