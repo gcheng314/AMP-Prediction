@@ -1,7 +1,17 @@
 def unknowns(infile):
     '''
     unknowns will take a fasta file downloaded from Uniprot and will output a 
-    file that contains all uncharacterized proteins '''
+    file that contains all uncharacterized proteins from the original file
+    
+    Requires:
+    file is not empty
+    file is in FASTA format
+    
+    Example:
+    If the user sets 'd_rerio_proteome.fasta' as the input, the function will
+    write all uncharacterized proteins to a new file.
+    
+    '''
     
     f = open(infile, 'r')
     o = open(infile[:infile.index('.')]+'_unknowns.txt', 'w')
