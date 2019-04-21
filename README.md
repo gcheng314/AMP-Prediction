@@ -44,7 +44,7 @@ From extracting the resulting .zip file downloaded from https://www.dveltri.com/
 delimited .txt file {d_rerio_pred.txt}
 
 5.
-Run rank.py with {d_rerio_pred.txt} and probility threshold {0.95} as parameters and upload the output {d_rerio_pred_ranked.txt} to
+Run rank.py with {d_rerio_pred.txt} as the parameter and upload the output {d_rerio_pred_ranked.txt} to
 Linux 
 
 [On Linux command line]
