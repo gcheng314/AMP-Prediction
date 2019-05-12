@@ -1,6 +1,11 @@
 # AMP-Prediction
-
 This project will aid in predicting novel antimicrobial peptide (AMP) families using command line Diamond blast and hmmsearch
+
+# Special Thanks
+Dr. Andrew Doxey
+Doxey Lab
+Dr. Brian Dixon
+Dixon Lab
 
 # Includes:
 tabulate.py
