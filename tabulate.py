@@ -124,7 +124,7 @@ for key in dict_table:
                                     str(mean(dict_table[key].match_lst)),
                                     dict_table[key].e_val]) + '\n')
 
-#Removes temporrary files created by this script
+#Removes temporary files created by this script
 rm_1 = 'rm predicted.fasta'
 rm_1_cmd = subprocess.Popen(rm_1.split(' '), stdout = subprocess.PIPE)
 
