@@ -12,7 +12,8 @@ def knowns(infile):
     write all proteins that are known AMPs to a new file
     '''
     
-    list_amps = ['Nigrocin', 'Bacteriocin', 'Brevinin', 'Beta-defensin', 
+    list_amps = ['Antimicrobial','antimicrobial','Nigrocin', 'NK-lysin',
+                 'Bacteriocin', 'Brevinin', 'Beta-defensin', 
                  'Cathelicidin', 'Defensin', 'Dermaseptin', 'Latarcin', 
                  'Palustrin', 'Rugosin', 'Cecropin', 'LEAP2', 'Hainanensisin',
                  'Liver-expressed', 'Penaeidin', 'Tachystatin', 'Pleurain',
@@ -22,8 +23,7 @@ def knowns(infile):
                  'Gaegurin', 'Metchnikowin', 'Pseudin', 'Aurein', 'Palustrin',
                  'Bombinin', 'Coleoptericin', 'Hepcidin', 'Moricin', 
                  'Ranateurin', 'Transferrin', 'Cupiennin', 'Histatin',
-                 'family antimicrobial peptide', 'Crustin', 
-                 'Myticin', 'Uperin', 'Nigroain', 'Maximins']
+                 'Crustin', 'Myticin', 'Uperin', 'Nigroain', 'Maximins']
     
     f = open(infile, 'r')
     o = open(infile[:infile.index('.')]+'_TP.txt', 'w')
