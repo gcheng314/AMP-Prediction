@@ -26,7 +26,7 @@ find_knowns.py
 - Python 2.7.1 or higher
 - Linux command line
 - All .hmm files downloaded from http://www.camp.bicnirrh.res.in/pattern_hmm.php?q=HMM_fam and merged into amps.hmm 
-- database file with diamond made. 
+- DIAMOND database file  
 
 change indicated directories to your cown preferred directories
 
