@@ -28,7 +28,7 @@ find_knowns.py
 - All .hmm files downloaded from http://www.camp.bicnirrh.res.in/pattern_hmm.php?q=HMM_fam and merged into amps.hmm 
 - DIAMOND database file  
 
-change indicated directories to your cown preferred directories
+change indicated directories to your own preferred directories
 
 # Instructions
 
